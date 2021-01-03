@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/users',users)
-app.use('/',admin)
+app.use('/api',admin)
 
 
 app.listen(process.env.PORT,()=>{

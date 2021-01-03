@@ -14,8 +14,8 @@ require('./db/db')
 app.use(express.json())
 app.use(cors())
 
-app.use('/api/users',users)
-app.use('/api',admin)
+app.use('/users',users)
+app.use('/',admin)
 
 
 app.listen(process.env.PORT,()=>{
